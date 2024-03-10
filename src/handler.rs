@@ -1,5 +1,3 @@
-use std::error::Error;
-
 use ntex::web::{self, DefaultError};
 use r2d2::Pool;
 use r2d2_postgres::{postgres::NoTls, PostgresConnectionManager};

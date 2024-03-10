@@ -9,7 +9,7 @@ async fn main() -> std::io::Result<()> {
     //std::env::set_var("RUST_LOG", "ntex=debug");
     //env_logger::init();
     let manager = PostgresConnectionManager::new(
-        "host=localhost user=root password=root dbname=rb2024"
+        "host=postgres user=root password=root dbname=rb2024"
             .parse()
             .unwrap(),
         NoTls,
