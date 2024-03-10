@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: docker.io/library/postgres:13
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "root"
+      POSTGRES_DB: "rb2024"
+    volumes:
+      - ./script.sql:/docker-entrypoint-initdb.d/ddl.sql 
+    ports:
+      - "5432:5432"
